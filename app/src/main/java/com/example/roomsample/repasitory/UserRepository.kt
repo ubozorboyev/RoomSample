@@ -6,7 +6,7 @@ import com.example.roomsample.model.UserData
 
 class UserRepository (val userDao: UserDao) :RepositoryInterface{
 
-    override fun addUser(userData: UserData) {
+    override  fun addUser(userData: UserData) {
         userDao.insert(userData)
     }
 

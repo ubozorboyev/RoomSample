@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:hint="name"
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:hint="surname"
+        android:id="@+id/inputSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:id="@+id/dialogCancel"
+            android:background="?attr/selectableItemBackground"
+            android:text="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:id="@+id/dialogOk"
+            android:background="?attr/selectableItemBackground"
+            android:text="ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

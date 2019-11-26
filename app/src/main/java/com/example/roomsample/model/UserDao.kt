@@ -8,11 +8,12 @@ interface UserDao {
       @Query("SELECT * FROM users ")
       fun getAllUser():LiveData<List<UserData>>
 
-      @Insert(onConflict = OnConflictStrategy.REPLACE)
+      @Insert(onConflict = OnConflictStrategy.IGNORE)
       fun insert(userData: UserData)
 
       @Query("DELETE  FROM users WHERE _id= :id")
       fun deteteUser(id:Int)
+
       @Update
       fun update(userData: UserData)
 }
